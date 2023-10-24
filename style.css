@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #513C4C; /* Deep Grey for the main body */
+    color: #513C4C; /* Light Grey for text */
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header, .footer {
+    background-color: #C8A2C8; /* Lilac */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #513C4C; /* Light Grey */
+}
+
+.contact {
+    text-decoration: none;
+    color: white; /* Royal Purple */
+    background-color: #513C4C; /* Light Grey */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+contact:hover {
+    background-color: #ac729e;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px 0; /* Padding top and bottom */
+}
+
+
+
+.card {
+    padding: 20px;
+    background-color: #C8A2C8; /* Royal Purple */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between cards */
+    width: 25%; /* Adjust for narrower or wider cards */
+    position: relative;
+    text-align: center;
+}
+
+.title {
+    font-size: 18px;
+    color: #513C4C; /* Light Grey */
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: form;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "contactme contactme"
+    "first-name last-name"
+    "email email"
+    "comment comment"
+    "submit submit";
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 40px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    grid-template-areas: 
+    "form ...";
+}
+
+.contactme {
+    grid-area: contactme;
+}
+
+.first-name {
+    grid-area: first-name;
+}
+
+.last-name {
+    grid-area: last-name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.submit {
+    grid-area: submit;
+}
+
+.comment {
+    grid-area: comment;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+  
+input, textarea {
+    margin-bottom: 1.2em;
+    border: 1px solid #4B0082;
+    border-radius: 4px;
+}
+  
+button {
+    padding: 0.7em 1.4em;
+    background-color: #513C4C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+button:hover {
+    background-color: #ac729e;
+}
+
+  
+.contactme {
+    font-size: 24px;
+    font-weight: bold;
+    color: black; /* Black */
+    text-align: center;
+}
