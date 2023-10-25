@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #513C4C; /* Deep Grey for the main body */
@@ -28,6 +28,10 @@ body {
     color: #513C4C; /* Light Grey */
 }
 
+.logo:hover {
+    cursor: default;
+}
+
 .to-bottom {
     text-decoration: none;
     color: white; /* Royal Purple */
@@ -45,13 +49,13 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 20px 0; /* Padding top and bottom */
+    padding: 20px; /* Padding top and bottom */
 }
 
 
 
 .card {
-    padding: 20px;
+    padding: 10px;
     background-color: #C8A2C8; /* Royal Purple */
     border-radius: 10px;
     margin-bottom: 20px; /* Space between cards */
@@ -153,4 +157,47 @@ button:hover {
     margin-top: 100px;
     margin-left: 50px;
     grid-area: blurb;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #ac729e;
+    cursor: pointer;
+}
+
+.title:hover {
+    cursor: pointer;
 }
