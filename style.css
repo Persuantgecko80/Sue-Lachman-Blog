@@ -52,8 +52,6 @@ body {
     padding: 20px; /* Padding top and bottom */
 }
 
-
-
 .card {
     padding: 10px;
     background-color: #C8A2C8; /* Royal Purple */
@@ -169,18 +167,38 @@ button:hover {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: opacity 0.75s ease-in-out;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
 }
   
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #C8A2C8;  /* Same as your card background */
+    margin: 15% auto;  /* Centering */
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    border-radius: 10px;  /* Same as your card border-radius */
+    color: #513C4C;  /* Same as your card text color */
+}
+
+.modal-content h1 {
+    font-size: 2em;
+    color: #513C4C;
+    text-align: center;
+}
+
+.modal-content p {
+    font-size: 1.2em;
+    color: #513C4C;
 }
   
 .close {
-    color: #aaa;
+    color: #513C4C;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -188,7 +206,7 @@ button:hover {
   
 .close:hover,
 .close:focus {
-    color: black;
+    color: #ac729e;
     text-decoration: none;
     cursor: pointer;
 }
@@ -201,3 +219,4 @@ button:hover {
 .title:hover {
     cursor: pointer;
 }
+
