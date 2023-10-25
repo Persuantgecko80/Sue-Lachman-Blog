@@ -28,7 +28,7 @@ body {
     color: #513C4C; /* Light Grey */
 }
 
-.contact {
+.to-bottom {
     text-decoration: none;
     color: white; /* Royal Purple */
     background-color: #513C4C; /* Light Grey */
@@ -36,7 +36,7 @@ body {
     border-radius: 5px;
 }
 
-contact:hover {
+.to-bottom:hover {
     background-color: #ac729e;
 }
 
@@ -68,6 +68,7 @@ contact:hover {
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 8px;
     grid-area: form;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -82,11 +83,10 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    padding: 40px;
+    padding: 30px;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
     grid-template-areas: 
-    "form ...";
+    "form blurb";
 }
 
 .contactme {
@@ -95,30 +95,30 @@ form {
 
 .first-name {
     grid-area: first-name;
+    min-height: 25px;
 }
 
 .last-name {
     grid-area: last-name;
+    min-height: 25px;
+
 }
 
 .email {
     grid-area: email;
+    min-height: 25px;
+
 }
 
 .submit {
     grid-area: submit;
+    min-height: 25px;
 }
 
 .comment {
     grid-area: comment;
 }
 
-label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-    color: #333;
-}
   
 input, textarea {
     margin-bottom: 1.2em;
@@ -147,4 +147,10 @@ button:hover {
     font-weight: bold;
     color: black; /* Black */
     text-align: center;
+}
+
+.blurb {
+    margin-top: 100px;
+    margin-left: 50px;
+    grid-area: blurb;
 }
