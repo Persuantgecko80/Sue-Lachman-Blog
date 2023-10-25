@@ -7,26 +7,31 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault();
       target.scrollIntoView({ behavior: "smooth" });
     });
-  
-    // Modal
-    var modal = document.getElementById("myModal");
-    var card = document.getElementById("special-card-1");
 
+    // Handle multiple modals
+    let openModal = null;  // Keep track of the currently open modal
 
-    var span = document.getElementsByClassName("close")[0];
-  
-    card.onclick = function() {
-      modal.style.display = "block";
+    for (let i = 1; i <= 5; i++) {
+        let modal = document.getElementById(`myModal-${i}`);
+        let card = document.getElementById(`special-card-${i}`);
+        let span = modal.querySelector(".close");
+        
+        card.onclick = function() {
+          modal.style.display = "block";
+          openModal = modal;  // Update the currently open modal
+        }
+
+        span.onclick = function() {
+          modal.style.display = "none";
+          openModal = null;  // Reset the open modal tracker
+        }
     }
-  
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-  
+
+    // Close the modal when clicking outside of it
     window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      if (event.target === openModal) {
+        openModal.style.display = "none";
+        openModal = null;  // Reset the open modal tracker
       }
     }
-  });
-  
+});
