@@ -220,3 +220,22 @@ button:hover {
     cursor: pointer;
 }
 
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "form"
+        "blurb";
+    }
+    .modal-content {
+        width: 90%;
+    }
+    .blurb, .contactme {
+        text-align: center;
+    }
+}
