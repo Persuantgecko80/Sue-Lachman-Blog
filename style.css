@@ -249,4 +249,10 @@ button:hover {
         width: 100%;
         max-width: 300px;
     }
+
+    .blurb {
+        text-align: center;
+        margin-left: 0;
+        padding: 0 10px;
+    }
 }
