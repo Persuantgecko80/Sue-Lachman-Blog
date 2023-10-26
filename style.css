@@ -238,4 +238,15 @@ button:hover {
     .blurb, .contactme {
         text-align: center;
     }
+
+    input, textarea {
+        width: 100%;
+        max-width: 300px;
+        font-size: 16px;
+    }
+    
+    button.submit {
+        width: 100%;
+        max-width: 300px;
+    }
 }
