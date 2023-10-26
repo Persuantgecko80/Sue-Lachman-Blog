@@ -97,24 +97,24 @@ form {
 
 .first-name {
     grid-area: first-name;
-    min-height: 25px;
+    min-height: 2em;
 }
 
 .last-name {
     grid-area: last-name;
-    min-height: 25px;
+    min-height: 2em;
 
 }
 
 .email {
     grid-area: email;
-    min-height: 25px;
+    min-height: 2em;
 
 }
 
 .submit {
     grid-area: submit;
-    min-height: 25px;
+    min-height: 2em;
 }
 
 .comment {
