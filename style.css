@@ -2,8 +2,8 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #513C4C; /* Deep Grey for the main body */
-    color: #513C4C; /* Light Grey for text */
+    background-color: #513C4C;
+    color: #513C4C;
 }
 
 .container {
@@ -11,7 +11,7 @@ body {
 }
 
 .header, .footer {
-    background-color: #C8A2C8; /* Lilac */
+    background-color: #C8A2C8;
 }
 
 .header {
@@ -25,7 +25,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #513C4C; /* Light Grey */
+    color: #513C4C;
 }
 
 .logo:hover {
@@ -34,8 +34,8 @@ body {
 
 .to-bottom {
     text-decoration: none;
-    color: white; /* Royal Purple */
-    background-color: #513C4C; /* Light Grey */
+    color: white;
+    background-color: #513C4C;
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -49,22 +49,22 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 20px; /* Padding top and bottom */
+    padding: 20px;
 }
 
 .card {
     padding: 10px;
-    background-color: #C8A2C8; /* Royal Purple */
+    background-color: #C8A2C8;
     border-radius: 10px;
-    margin-bottom: 20px; /* Space between cards */
-    width: 25%; /* Adjust for narrower or wider cards */
+    margin-bottom: 20px;
+    width: 25%;
     position: relative;
     text-align: center;
 }
 
 .title {
     font-size: 18px;
-    color: #513C4C; /* Light Grey */
+    color: #513C4C;
 }
 
 form {
@@ -147,7 +147,7 @@ button:hover {
 .contactme {
     font-size: 24px;
     font-weight: bold;
-    color: black; /* Black */
+    color: black;
     text-align: center;
 }
 
@@ -159,14 +159,14 @@ button:hover {
 
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    display: none;
+    position: fixed;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
     transition: opacity 0.75s ease-in-out;
 }
 
@@ -177,13 +177,13 @@ button:hover {
   
 .modal-content {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #C8A2C8;  /* Same as your card background */
-    margin: 15% auto;  /* Centering */
+    background-color: #C8A2C8;
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    border-radius: 10px;  /* Same as your card border-radius */
-    color: #513C4C;  /* Same as your card text color */
+    border-radius: 10px;
+    color: #513C4C;
 }
 
 .modal-content h1 {
@@ -221,7 +221,6 @@ button:hover {
 }
 
 
-/* Media query for mobile responsiveness */
 @media only screen and (max-width: 768px) {
     .card {
         width: 80%;
