@@ -159,7 +159,6 @@ button:hover {
     grid-area: blurb;
 }
 
-
 .modal {
     display: none;
     position: fixed;
